@@ -68,4 +68,28 @@ function liveClock () {
 
 }
 
-//Add a live updating clock of the current time (digital)
+//Add a live updating clock
+//of the current time (digital)
+
+
+//When you click this button, the current day's
+//business hours end at the current time
+//in the table
+
+var el=document.getElementById("button");
+
+el.addEventListener("click",changeClosingHour);
+
+function changeClosingHour() {
+
+  var dChange = new Date();
+  var dDayChange = dChange.getDay();
+  var dHoursChange = dChange.getHours();
+  var dMinutesChange = dChange.getMinutes();
+
+  var xChange = document.getElementsByClassName(dDayChange);
+
+  xChange[2].innerHTML=dHoursChange;
+  xChange[3].innerHTML=dMinutesChange;
+
+}
