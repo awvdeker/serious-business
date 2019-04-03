@@ -30,7 +30,7 @@ else {later = false;}
 
 if (dHours>x[2].innerHTML){ earlier = false;}
 else if (dHours<x[2].innerHTML){ earlier = true;}
-else if ((dHours==x[2].innerHTML) && (dMinutes<=x[3].innerHTML)){earlier = true;}
+else if ((dHours==x[2].innerHTML) && (dMinutes<x[3].innerHTML)){earlier = true;}
 else {earlier = false;}
 
 
